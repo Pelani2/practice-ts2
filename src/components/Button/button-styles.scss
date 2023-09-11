@@ -1,0 +1,33 @@
+@import "../../styles/colors.scss";
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &.login-button {
+        background-color: $login-button-color;
+        color: lighten($login-button-color, 40%);
+
+        &:hover {
+            background-color: darken($login-button-color, 10%);
+            transform: scale(1.05);
+        }
+    }
+
+    &.signup-button {
+        background-color: $signup-button-color;
+        color: lighten($signup-button-color, 40%);
+
+        &:hover {
+            background-color: darken($signup-button-color, 10%);
+            transform: scale(1.05);
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import ListItem from "../ListItem";
+import Button from "../Button";
 import { Link } from "react-router-dom";
 import "./nav-styles.scss";
 
@@ -31,6 +32,21 @@ const NavigationBar: React.FC = () => {
                     </Link>
                 </ListItem>
             </ul>
+
+            <div className="navigation-bar__buttons">
+                <Button
+                    type="button"
+                    variant="login-button"
+                >
+                    Login
+                </Button>
+                <Button
+                    type="button"
+                    variant="signup-button"
+                >
+                    Signup
+                </Button>
+            </div>
         </nav>
     );
 };

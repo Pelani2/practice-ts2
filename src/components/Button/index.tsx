@@ -2,7 +2,8 @@ import React from "react";
 import "./button-styles.scss";
 
 const buttonClassMap: Record<string, string> = {
-    "nav-button": "nav-button",
+    "login-button": "login-button",
+    "signup-button": "signup-button",
 };
 
 interface ButtonProps {
