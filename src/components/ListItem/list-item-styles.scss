@@ -1,11 +1,21 @@
+@import "../../styles/colors.scss";
+
 .list-item {
+    background: $list-item-bg;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
     &.nav-list-item {
-        list-style: none;
-        transition: transform 0.2s ease, opacity 0.2s ease;
+        margin-right: 1rem;
+        color: $list-item-bg;
+        background: linear-gradient(135deg, lighten($list-item-bg, 10%) 0%, darken($list-item-bg, 10%) 100%);
 
         &:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
     }
 }
