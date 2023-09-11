@@ -1,0 +1,11 @@
+.list-item {
+    &.nav-list-item {
+        list-style: none;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+    }
+}

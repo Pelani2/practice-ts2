@@ -1,4 +1,5 @@
 import React from "react";
+import "./list-item-styles.scss";
 
 const variantClassMap: Record<string, string> = {
     "nav-list-item": "nav-list-item",
