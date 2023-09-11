@@ -1,28 +1,23 @@
-import React, { HTMLProps } from "react";
+import React from "react";
 import "./typography-styles.scss";
 
-type TypographyProps = {
-    variant: string;
-} & HTMLProps<HTMLElement>;
+const variantClassMap: Record<string, string> = {
+    title: "title",
+};
 
-const Typography: React.FC<TypographyProps> = ({ variant, children, ...rest }) => {
-    const variantMap: Record<string, string> = {
-        default: 'default',
-        headline: 'headline',
-        subheading: 'subheading',
-        "nav-link": "nav-link",
-    };
+interface TypographyProps {
+    variant: keyof typeof variantClassMap;
+    children: React.ReactNode;
+};
 
-    const variantClass = `typography ${variantMap[variant] || `default`}`;
+const Typography: React.FC<TypographyProps> = ({ variant, children }) => {
+    const className = `typography ${variantClassMap[variant]}`;
 
     return (
-        <span
-            className={`typography ${variantClass}`}
-            {...rest}
-        >
+        <div className={className}>
             {children}
-        </span>
+        </div>
     );
-}
+};
 
 export default Typography;
