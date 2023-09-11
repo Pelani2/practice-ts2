@@ -1,9 +1,9 @@
-import React from "react";
+import NavigationBar from "../Nav";
 
 const Home = () => {
     return (
-        <div>
-            Home page
+        <div className="home">
+            <NavigationBar />
         </div>
     );
 };
