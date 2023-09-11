@@ -1,4 +1,5 @@
 import React, { HTMLProps } from "react";
+import "./typography-styles.scss";
 
 type TypographyProps = {
     variant: string;
@@ -9,6 +10,7 @@ const Typography: React.FC<TypographyProps> = ({ variant, children, ...rest }) =
         default: 'default',
         headline: 'headline',
         subheading: 'subheading',
+        "nav-link": "nav-link",
     };
 
     const variantClass = `typography ${variantMap[variant] || `default`}`;

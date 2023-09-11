@@ -1,6 +1,6 @@
 import React from "react";
-import Typography from "../Typography";
 import { Link } from "react-router-dom";
+import "./nav-styles.scss";
 
 const NavigationBar: React.FC = () => {
     return (
@@ -8,30 +8,22 @@ const NavigationBar: React.FC = () => {
             <ul className="navigation-bar__list">
                 <li className="navigation-bar__list-item">
                     <Link to="/">
-                        <Typography variant="nav-link">
-                            Home
-                        </Typography>
+                        Home 
                     </Link>
                 </li>
                 <li className="navigation-bar__list-item">
                     <Link to="/about">
-                        <Typography variant="nav-link">
-                            About
-                        </Typography>
+                        About
                     </Link>
                 </li>
                 <li className="navigation-bar__list-item">
                     <Link to="/services">
-                        <Typography variant="nav-link">
-                            Services
-                        </Typography>
+                        Services
                     </Link>
                 </li>
                 <li className="navigation-bar__list-item">
                     <Link to="/contact">
-                        <Typography variant="nav-link">
-                            Contact
-                        </Typography>
+                        Contact
                     </Link>
                 </li>
             </ul>
