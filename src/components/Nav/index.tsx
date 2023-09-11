@@ -7,9 +7,7 @@ const NavigationBar: React.FC = () => {
         <nav className="navigation-bar">
             <ul className="navigation-bar__list">
                 <li className="navigation-bar__list-item">
-                    <Link to="/">
-                        Home 
-                    </Link>
+
                 </li>
                 <li className="navigation-bar__list-item">
                     <Link to="/about">
