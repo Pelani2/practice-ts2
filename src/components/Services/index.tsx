@@ -5,21 +5,21 @@ import "./services-style.scss";
 const Services: React.FC = () => {
     return (
         <div className="services-page">
-            <Typography variant="">
+            <Typography variant="services-title">
                 Our Services
             </Typography>
-            <Typography variant="">
+            <Typography variant="services-subtitle">
                 Currency exchange
             </Typography>
-            <Typography variant="">
+            <Typography variant="services-paragraph">
                 We offer currency exhange services with competitive rates.
                 <br />
                 Contact us to exhange your currency today.
             </Typography>
-            <Typography variant="">
+            <Typography variant="services-subtitle">
                 Trading
             </Typography>
-            <Typography variant="">
+            <Typography variant="services-paragraph">
                 Explore our trading platforms and start trading in the financial market.
                 <br />
                 Take advantage of our expert insights and tools.

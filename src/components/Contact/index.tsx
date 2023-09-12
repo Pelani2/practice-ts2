@@ -5,10 +5,10 @@ import "./contact-styles.scss";
 const Contact: React.FC = () => {
     return (
         <div className="contact-page">
-            <Typography variant="title">
+            <Typography variant="contact-title">
                 Contact Us 
             </Typography>
-            <Typography variant="paragraph">
+            <Typography variant="contact-paragraph">
                 Phone: +1 (123) 456-7890
             <br />
                 Email: info@example.com
