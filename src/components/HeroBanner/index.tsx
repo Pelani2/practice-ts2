@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "../Typography";
 import { Link } from "react-router-dom";
 import "./hero-banner-styles.scss";
 
@@ -24,12 +25,12 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
     return (
         <div className="hero-banner" style={backgroundStyle}>
             <div className="hero-content">
-                <h1 className="hero-title">
+                <Typography variant="hero-title">
                     {title}
-                </h1>
-                <p className="hero-subtitle">
+                </Typography>
+                <Typography variant="hero-subtitle">
                     {subtitle}
-                </p>
+                </Typography>
                 <Link to={ctaLink} className="cta-button">
                     {ctaText}
                 </Link>
