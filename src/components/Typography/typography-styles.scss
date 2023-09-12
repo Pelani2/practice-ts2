@@ -44,4 +44,18 @@
         margin-bottom: 20px;
         text-align: center;
     }
+
+    &.contact-title {
+        font-size: 48px;
+        font-weight: bold;
+        color: #0000ff;
+        text-shadow: 0 0 10px #000;
+    }
+
+    &.contact-paragraph {
+        font-size: 18px;
+        color: #0000ff;
+        line-height: 1.5;
+        text-align: center;
+    }
 }
