@@ -1,0 +1,12 @@
+.typography {
+    &.title {
+        font-size: 36px;
+        color: #333;
+    }
+
+    &.paragraph {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.5;
+    }
+}

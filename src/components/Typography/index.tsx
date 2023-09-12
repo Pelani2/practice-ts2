@@ -3,6 +3,7 @@ import "./typography-styles.scss";
 
 const variantClassMap: Record<string, string> = {
     title: "title",
+    paragraph: "paragraph",
 };
 
 interface TypographyProps {
