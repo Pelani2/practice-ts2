@@ -9,6 +9,8 @@ const variantClassMap: Record<string, string> = {
     "services-paragraph": "services-paragraph",
     "contact-title": "contact-title",
     "contact-paragraph": "contact-paragraph",
+    "about-title": "about-title",
+    "about-paragraph": "about-paragraph",
 };
 
 interface TypographyProps {

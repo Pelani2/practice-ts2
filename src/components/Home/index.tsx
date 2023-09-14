@@ -9,7 +9,7 @@ const Home = () => {
             <HeroBanner 
                 title="Welcome to our website"
                 subtitle="Discover amazing products and services"
-                backgroundImageUrl="https://th.bing.com/th/id/OIG.kgfJtXq_qSWS2D_3PUvZ?pid=ImgGn"
+                backgroundImageUrl="https://th.bing.com/th/id/OIG.9148_sOp2J4Xfu68EBJi?pid=ImgGn"
                 ctaText="Get Started"
                 ctaLink="/get-started"
             />

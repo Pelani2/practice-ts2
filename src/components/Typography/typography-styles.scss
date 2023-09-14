@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .typography {
     &.hero-title {
         font-size: 48px;
@@ -57,5 +59,32 @@
         color: #0000ff;
         line-height: 1.5;
         text-align: center;
+    }
+
+    &.about-title {
+        font-family: $title-font;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $primary-color;
+        text-align: center;
+        text-shadow: 2px 2px $accent-color;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &.about-paragraph {
+        font-family: $text-font;
+        font-size: 1.5rem;
+        color: $secondary-color;
+        line-height: 1.8;
+        margin: 1rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
     }
 }
