@@ -4,6 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 import Typography from "../Typography";
 import Label from "../Label";
+import Button from "../Button";
 import "./login-styles.scss";
 
 const schema = yup.object().shape({
@@ -58,10 +59,18 @@ const Login: React.FC = () => {
                         control={control}
                         render={({ field }) => <input {...field} />}
                     />
-                    <Typography variant="">
-                        {errors.email?.message}
-                    </Typography>
+                    
                 </div>
+                <Typography variant="">
+                        {errors.email?.message}
+                </Typography>
+                <Button
+                    type="submit"
+                    variant=""
+                >
+                    Submit
+                </Button>
+                {/* style the button and move on */}
             </form>
         </div>
     );
