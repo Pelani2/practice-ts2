@@ -3,7 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 import Typography from "../Typography";
-import { error } from "console";
+import Label from "../Label";
 
 const schema = yup.object().shape({
     email: yup.string().required("Email is required").email("Invalid email"),
@@ -11,7 +11,7 @@ const schema = yup.object().shape({
 });
 
 const Login: React.FC = () => {
-    const { handleSubmit, control, errors } = useForm({
+    const { handleSubmit, control, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
 
@@ -29,9 +29,12 @@ const Login: React.FC = () => {
                 className="login-form"
             >
                 <div className="form-group">
-                    <label>
+                    <Label
+                        variant=""
+                        htmlFor="email"
+                    >
                         Email:
-                    </label>
+                    </Label>
                     <Controller 
                         name="email"
                         control={control}
