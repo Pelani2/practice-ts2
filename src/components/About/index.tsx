@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "../Typography";
+import "./about-styles.scss";
 
 const About: React.FC = () => {
     return (
