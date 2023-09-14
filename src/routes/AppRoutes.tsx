@@ -2,6 +2,7 @@ import Home from "../components/Home";
 import Contact from "../components/Contact";
 import Services from "../components/Services";
 import About from "../components/About";
+import Login from "../components/Login";
 
 const AppRoutes = [
     {
@@ -19,6 +20,10 @@ const AppRoutes = [
     {
         path: "/about",
         element: <About />
+    },
+    {
+        path: "/login",
+        element: <Login />
     }
 ];
 

@@ -37,6 +37,7 @@ const NavigationBar: React.FC = () => {
                 <Button
                     type="button"
                     variant="login-button"
+                    to="/login"
                 >
                     Login
                 </Button>
