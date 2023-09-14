@@ -4,6 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 import Typography from "../Typography";
 import Label from "../Label";
+import "./login-styles.scss";
 
 const schema = yup.object().shape({
     email: yup.string().required("Email is required").email("Invalid email"),
@@ -30,7 +31,7 @@ const Login: React.FC = () => {
             >
                 <div className="form-group">
                     <Label
-                        variant=""
+                        variant="form-label"
                         htmlFor="email"
                     >
                         Email:
@@ -40,14 +41,14 @@ const Login: React.FC = () => {
                         control={control}
                         render={({ field }) => <input {...field} />}
                     />
-                    <Typography variant="">
-                        {errors.email?.message}
-                    </Typography>
                 </div>
+                <Typography variant="">
+                        {errors.email?.message}
+                </Typography>
 
                 <div className="form-group">
                     <Label
-                        variant=""
+                        variant="form-label"
                         htmlFor="password"
                     >
                         Password:

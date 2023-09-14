@@ -1,4 +1,5 @@
 import React from "react";
+import "./label-styles.scss";
 
 const variantClassMap: Record<string, string> = {
     "form-label": "form-label",
