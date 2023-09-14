@@ -44,6 +44,23 @@ const Login: React.FC = () => {
                         {errors.email?.message}
                     </Typography>
                 </div>
+
+                <div className="form-group">
+                    <Label
+                        variant=""
+                        htmlFor="password"
+                    >
+                        Password:
+                    </Label>
+                    <Controller 
+                        name="password"
+                        control={control}
+                        render={({ field }) => <input {...field} />}
+                    />
+                    <Typography variant="">
+                        {errors.email?.message}
+                    </Typography>
+                </div>
             </form>
         </div>
     );
