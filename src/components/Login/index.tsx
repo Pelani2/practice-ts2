@@ -23,7 +23,7 @@ const Login: React.FC = () => {
 
     return (
         <div className="login">
-            <Typography variant="">
+            <Typography variant="LS-title">
                 Login
             </Typography>
             <form 
@@ -64,13 +64,14 @@ const Login: React.FC = () => {
                 <Typography variant="">
                         {errors.email?.message}
                 </Typography>
-                <Button
-                    type="submit"
-                    variant=""
-                >
-                    Submit
-                </Button>
-                {/* style the button and move on */}
+                <div className="button-wrapper">
+                    <Button
+                        type="submit"
+                        variant="submit-button"
+                    >
+                        Submit
+                    </Button>
+                </div>
             </form>
         </div>
     );

@@ -31,5 +31,14 @@
         }
     }
 
-    
+    &.submit-button {
+        background-color: $button-color;
+        color: lighten($button-color, 40%);
+        width: 100%;
+
+        &:hover {
+            background-color: darken($button-color, 10%);
+            transform: scale(1.05);
+        }
+    }
 }

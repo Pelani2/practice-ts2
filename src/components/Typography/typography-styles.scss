@@ -88,4 +88,29 @@
             transition: all 0.3s ease-in-out;
         }
     }
+
+    &.LS-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right, #007BFF, #00bfff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: neonGlow 1s ease infinite alternate;
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            100% {
+                text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+            }
+        }
+    }
 }

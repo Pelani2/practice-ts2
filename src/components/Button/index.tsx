@@ -6,6 +6,7 @@ const buttonClassMap: Record<string, string> = {
     "login-button": "login-button",
     "signup-button": "signup-button",
     "cta-button": "cta-button",
+    "submit-button": "submit-button",
 };
 
 interface ButtonProps {
