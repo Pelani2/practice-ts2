@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import Typography from "../Typography";
 import Label from "../Label";
 import Button from "../Button";
+import Input from "../Input";
 import "./login-styles.scss";
 
 const schema = yup.object().shape({
@@ -40,7 +41,14 @@ const Login: React.FC = () => {
                     <Controller 
                         name="email"
                         control={control}
-                        render={({ field }) => <input {...field} />}
+                        render={({ field }) => 
+                        <Input 
+                            variant=""
+                            field={field}
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                        />}
                     />
                 </div>
                 <Typography variant="error-message">
@@ -57,7 +65,14 @@ const Login: React.FC = () => {
                     <Controller 
                         name="password"
                         control={control}
-                        render={({ field }) => <input {...field} />}
+                        render={({ field }) => 
+                            <Input 
+                                variant="" 
+                                field={field}
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                        />}
                     />
                 </div>
                 <Typography variant="error-message">
