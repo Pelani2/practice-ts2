@@ -44,6 +44,7 @@ const NavigationBar: React.FC = () => {
                 <Button
                     type="button"
                     variant="signup-button"
+                    to="/signup"
                 >
                     Signup
                 </Button>
