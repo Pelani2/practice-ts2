@@ -96,11 +96,11 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         margin-bottom: 20px;
-        background-image: linear-gradient(to right, #007BFF, #00bfff);
+        background-image: linear-gradient(to right, $secondary-color, $primary-color);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         animation: neonGlow 1s ease infinite alternate;
 
         @keyframes neonGlow {

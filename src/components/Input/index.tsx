@@ -15,6 +15,7 @@ interface InputProps {
         value: string;
     }
     variant: keyof typeof variantClassMap;
+    value: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -31,7 +32,9 @@ const Input: React.FC<InputProps> = ({
             type={type}
             name={name}
             placeholder={placeholder}
-            {...field}
+            value={field.value || ""}
+            onChange={field.onChange}
+            onBlur={field.onBlur}
             className={className}
         />
     );

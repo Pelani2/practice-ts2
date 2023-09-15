@@ -16,6 +16,10 @@ const schema = yup.object().shape({
 const Login: React.FC = () => {
     const { handleSubmit, control, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
+        defaultValues: {
+            email: "",
+            password: "",
+        }
     });
 
     const onSubmit = (data: any) => {
@@ -48,6 +52,7 @@ const Login: React.FC = () => {
                             type="email"
                             name="email"
                             placeholder="Email"
+                            value={field.value}
                         />}
                     />
                 </div>
@@ -74,6 +79,7 @@ const Login: React.FC = () => {
                                 type="password"
                                 name="password"
                                 placeholder="Password"
+                                value={field.value}
                         />}
                     />
                 </div>
