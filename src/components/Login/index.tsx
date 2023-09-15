@@ -43,7 +43,7 @@ const Login: React.FC = () => {
                         control={control}
                         render={({ field }) => 
                         <Input 
-                            variant=""
+                            variant="LS-input"
                             field={field}
                             type="email"
                             name="email"
@@ -67,7 +67,7 @@ const Login: React.FC = () => {
                         control={control}
                         render={({ field }) => 
                             <Input 
-                                variant="" 
+                                variant="LS-input" 
                                 field={field}
                                 type="password"
                                 name="password"
