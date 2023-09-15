@@ -51,9 +51,11 @@ const Login: React.FC = () => {
                         />}
                     />
                 </div>
-                <Typography variant="error-message">
+                {errors.email && (
+                    <Typography variant="error-message">
                         {errors.email?.message}
-                </Typography>
+                    </Typography>
+                )}
 
                 <div className="form-group">
                     <Label
@@ -75,9 +77,12 @@ const Login: React.FC = () => {
                         />}
                     />
                 </div>
-                <Typography variant="error-message">
+                {errors.password && (
+                    <Typography variant="error-message">
                         {errors.password?.message}
-                </Typography>
+                    </Typography>
+                )}
+                
                 <div className="button-wrapper">
                     <Button
                         type="submit"
