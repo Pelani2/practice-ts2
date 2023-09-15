@@ -12,6 +12,7 @@ const variantClassMap: Record<string, string> = {
     "about-title": "about-title",
     "about-paragraph": "about-paragraph",
     "LS-title": "LS-title",
+    "error-message": "error-message",
 };
 
 interface TypographyProps {

@@ -113,4 +113,31 @@
             }
         }
     }
+
+    &.error-message {
+        font-size: 1.2rem;
+        color: #FF6347;
+        background-color: #FFF0F0;
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid #FF6347;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "Error:";
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        &::after {
+            content: "❌";
+            font-size: 1.4rem;
+            margin-left: 5px;
+        }
+    }
 }

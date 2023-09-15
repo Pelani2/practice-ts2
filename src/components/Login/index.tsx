@@ -9,7 +9,7 @@ import "./login-styles.scss";
 
 const schema = yup.object().shape({
     email: yup.string().required("Email is required").email("Invalid email"),
-    password: yup.string().required("Password is required").min(6, "Password must be at least 6 characters long"),
+    password: yup.string().required("Password is required").matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/, "Invalid password"),
 });
 
 const Login: React.FC = () => {
@@ -43,7 +43,7 @@ const Login: React.FC = () => {
                         render={({ field }) => <input {...field} />}
                     />
                 </div>
-                <Typography variant="">
+                <Typography variant="error-message">
                         {errors.email?.message}
                 </Typography>
 
@@ -59,10 +59,9 @@ const Login: React.FC = () => {
                         control={control}
                         render={({ field }) => <input {...field} />}
                     />
-                    
                 </div>
-                <Typography variant="">
-                        {errors.email?.message}
+                <Typography variant="error-message">
+                        {errors.password?.message}
                 </Typography>
                 <div className="button-wrapper">
                     <Button
