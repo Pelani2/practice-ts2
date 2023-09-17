@@ -111,7 +111,7 @@ const Signup: React.FC = () => {
                             <>
                                 <ConfirmPasswordInput 
                                     name="confirmPassword"
-                                    placeholder="confirmPassword"
+                                    placeholder="Confirm Password"
                                     field={field}
                                     variant="LS-CP-input"
                                 />
@@ -123,6 +123,15 @@ const Signup: React.FC = () => {
                             </>
                         )}
                     />
+                </div>
+
+                <div className="button-wrapper">
+                    <Button 
+                        type="submit"
+                        variant="submit-button"
+                    >
+                        Submit
+                    </Button>
                 </div>
             </form>
         </div>
