@@ -29,7 +29,43 @@ const Signup: React.FC = () => {
 
     return (
         <div className="signup">
-            
+            <Typography variant="LS-title">
+                Signup
+            </Typography>
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="singup-form"
+            >
+                <div className="form-group">
+                    <Label
+                        variant="form-label"
+                        htmlFor="email"
+                    >
+                        Email:
+                    </Label>
+                    <Controller 
+                        name="email"
+                        control={control}
+                        render={({ field }) => (
+                            <>
+                                <Input 
+                                    variant="LS-input"
+                                    field={field}
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    value={field.value}
+                                />
+                                {errors.email && (
+                                    <Typography variant="error-message">
+                                        {errors.email.message}
+                                    </Typography>
+                                )}
+                            </>
+                        )}
+                    />
+                </div>
+            </form>
         </div>
     );
 };
