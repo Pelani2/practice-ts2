@@ -15,8 +15,20 @@ const schema = yup.object().shape({
 });
 
 const Signup: React.FC = () => {
+    const {
+        handleSubmit, 
+        control,
+        formState: { errors }
+    } = useForm({
+        resolver: yupResolver(schema),
+    });
+
+    const onSubmit = (data: any) => {
+        console.log(data);
+    };
+
     return (
-        <div>
+        <div className="signup">
             
         </div>
     );
