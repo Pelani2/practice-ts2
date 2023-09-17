@@ -113,6 +113,7 @@ const Signup: React.FC = () => {
                                     name="confirmPassword"
                                     placeholder="confirmPassword"
                                     field={field}
+                                    variant="LS-CP-input"
                                 />
                                 {errors.confirmPassword && (
                                     <Typography variant="error-message">
