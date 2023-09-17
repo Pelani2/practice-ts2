@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import Services from "../components/Services";
 import About from "../components/About";
 import Login from "../components/Login";
+import Signup from "../components/Signup";
 
 const AppRoutes = [
     {
@@ -24,6 +25,10 @@ const AppRoutes = [
     {
         path: "/login",
         element: <Login />
+    },
+    {
+        path: "/signup",
+        element: <Signup />
     }
 ];
 
