@@ -6,6 +6,7 @@ import Typography from "../Typography";
 import Label from "../Label";
 import Button from "../Button";
 import Input from "../Input";
+import ConfirmPasswordInput from "../ConfirmPasswordInput";
 import "./signup-styles.scss";
 
 const schema = yup.object().shape({
@@ -71,7 +72,7 @@ const Signup: React.FC = () => {
                         variant="form-label"
                         htmlFor="password"
                     >
-                        Password
+                        Password:
                     </Label>
                     <Controller 
                         name="password"
@@ -89,6 +90,33 @@ const Signup: React.FC = () => {
                                 {errors.password && (
                                     <Typography variant="error-message">
                                         {errors.password.message}
+                                    </Typography>
+                                )}
+                            </>
+                        )}
+                    />
+                </div>
+
+                <div className="form-group">
+                    <Label
+                        variant="form-label"
+                        htmlFor="confirmPassword"
+                    >
+                        Confirm password:
+                    </Label>
+                    <Controller 
+                        name="confirmPassword"
+                        control={control}
+                        render={({ field }) => (
+                            <>
+                                <ConfirmPasswordInput 
+                                    name="confirmPassword"
+                                    placeholder="confirmPassword"
+                                    field={field}
+                                />
+                                {errors.confirmPassword && (
+                                    <Typography variant="error-message">
+                                        {errors.confirmPassword.message}
                                     </Typography>
                                 )}
                             </>
