@@ -65,6 +65,36 @@ const Signup: React.FC = () => {
                         )}
                     />
                 </div>
+
+                <div className="form-group">
+                    <Label
+                        variant="form-label"
+                        htmlFor="password"
+                    >
+                        Password
+                    </Label>
+                    <Controller 
+                        name="password"
+                        control={control}
+                        render={({ field }) => (
+                            <>
+                                <Input 
+                                    variant="LS-input"
+                                    field={field}
+                                    type="password"
+                                    name="password"
+                                    placeholder="Password"
+                                    value={field.value}
+                                />
+                                {errors.password && (
+                                    <Typography variant="error-message">
+                                        {errors.password.message}
+                                    </Typography>
+                                )}
+                            </>
+                        )}
+                    />
+                </div>
             </form>
         </div>
     );
