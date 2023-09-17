@@ -35,7 +35,7 @@ const Signup: React.FC = () => {
             </Typography>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="singup-form"
+                className="signup-form"
             >
                 <div className="form-group">
                     <Label
@@ -57,15 +57,16 @@ const Signup: React.FC = () => {
                                     placeholder="Email"
                                     value={field.value}
                                 />
-                                {errors.email && (
-                                    <Typography variant="error-message">
-                                        {errors.email.message}
-                                    </Typography>
-                                )}
+                                
                             </>
                         )}
                     />
                 </div>
+                {errors.email && (
+                    <Typography variant="error-message">
+                        {errors.email.message}
+                    </Typography>
+                )}
 
                 <div className="form-group">
                     <Label
@@ -87,15 +88,16 @@ const Signup: React.FC = () => {
                                     placeholder="Password"
                                     value={field.value}
                                 />
-                                {errors.password && (
-                                    <Typography variant="error-message">
-                                        {errors.password.message}
-                                    </Typography>
-                                )}
+                                
                             </>
                         )}
                     />
                 </div>
+                {errors.password && (
+                    <Typography variant="error-message">
+                        {errors.password.message}
+                    </Typography>
+                )}
 
                 <div className="form-group">
                     <Label
@@ -115,15 +117,16 @@ const Signup: React.FC = () => {
                                     field={field}
                                     variant="LS-CP-input"
                                 />
-                                {errors.confirmPassword && (
-                                    <Typography variant="error-message">
-                                        {errors.confirmPassword.message}
-                                    </Typography>
-                                )}
+                                
                             </>
                         )}
                     />
                 </div>
+                {errors.confirmPassword && (
+                    <Typography variant="error-message">
+                        {errors.confirmPassword.message}
+                    </Typography>
+                )}
 
                 <div className="button-wrapper">
                     <Button 
