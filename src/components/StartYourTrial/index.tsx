@@ -27,15 +27,15 @@ const StartYourTrial: React.FC = () => {
     return (
         <div className='start-trial'>
             <header className='start-trial__header'>
-                <Typography variant=''>
+                <Typography variant='trial-title'>
                     Start Your Free Trial
                 </Typography>
-                <Typography variant=''>
+                <Typography variant='trial-subtitle'>
                     Eperience the power of our product for free.
                 </Typography>
             </header>
             <div className='trial-form'>
-                <Typography variant=''>
+                <Typography variant='trial-title'>
                     Get started
                 </Typography>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -109,7 +109,7 @@ const StartYourTrial: React.FC = () => {
             </div>
 
             <section className='trial-details'>
-                <Typography variant=''>
+                <Typography variant='trial-title'>
                     What You Get
                 </Typography>
                 <ul>

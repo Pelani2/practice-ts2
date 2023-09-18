@@ -140,4 +140,26 @@
             margin-left: 5px;
         }
     }
+
+    &.trial-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: transparent;
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0.03rem 0.03rem 0 rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-0.1rem);
+            text-shadow: -0.03rem -0.03rem 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &.trial-subtitle {
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #333;
+    }
 }
