@@ -3,6 +3,7 @@ import "./label-styles.scss";
 
 const variantClassMap: Record<string, string> = {
     "form-label": "form-label",
+    "trial-label": "trial-label",
 };
 
 interface LabelProps {

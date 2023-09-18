@@ -16,4 +16,15 @@
             background-color: $accent-color;
         }
     }
+
+    &.trial-label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
 }

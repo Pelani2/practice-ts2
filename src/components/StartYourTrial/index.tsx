@@ -43,7 +43,7 @@ const StartYourTrial: React.FC = () => {
                     <div className='form-group'>
                         <Label 
                             htmlFor='name'
-                            variant=''
+                            variant='trial-label'
                         >
                             Name:
                         </Label>
@@ -57,7 +57,7 @@ const StartYourTrial: React.FC = () => {
                                 name='name'
                                 placeholder='Name'
                                 field={field}
-                                variant=''
+                                variant='trial-input'
                                 value={field.value}
                             />
                         )}
@@ -71,7 +71,7 @@ const StartYourTrial: React.FC = () => {
 
                     <div className='form-group'>
                         <Label 
-                            variant=''
+                            variant='trial-label'
                             htmlFor='email'
                         >
                             Email:
@@ -86,7 +86,7 @@ const StartYourTrial: React.FC = () => {
                                 name='email'
                                 placeholder='Email'
                                 field={field}
-                                variant=''
+                                variant='trial-input'
                                 value={field.value}
                             />
                         )}
@@ -100,7 +100,7 @@ const StartYourTrial: React.FC = () => {
                     
                     <div className='form-group'>
                         <Label
-                            variant=''
+                            variant='trial-label'
                             htmlFor='password'
                         >
                             Password:
@@ -115,7 +115,7 @@ const StartYourTrial: React.FC = () => {
                                 name='password'
                                 placeholder='Password'
                                 field={field}
-                                variant=''
+                                variant='trial-input'
                                 value={field.value}
                             />
                         )}
