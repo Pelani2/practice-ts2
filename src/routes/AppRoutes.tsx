@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import About from "../components/About";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
+import StartYourTrial from "../components/StartYourTrial";
 
 const AppRoutes = [
     {
@@ -29,6 +30,10 @@ const AppRoutes = [
     {
         path: "/signup",
         element: <Signup />
+    },
+    {
+        path: "/startyourtrial",
+        element: <StartYourTrial />
     }
 ];
 
