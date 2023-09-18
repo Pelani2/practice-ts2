@@ -5,6 +5,7 @@ import * as yup from 'yup';
 import Input from '../Input';
 import Typography from '../Typography';
 import Button from '../Button';
+import { Link } from 'react-router-dom';
 import "./start-trial.scss";
 
 const schema = yup.object().shape({
@@ -106,6 +107,32 @@ const StartYourTrial: React.FC = () => {
                     </Button>
                 </form>
             </div>
+
+            <section className='trial-details'>
+                <Typography variant=''>
+                    What You Get
+                </Typography>
+                <ul>
+                   <li>
+                        Access to all premium features
+                    </li>
+                    <li>
+                        14 days of unlimited usage
+                    </li>
+                    <li>
+                       Personalized support 
+                    </li>
+                </ul>
+            </section>
+
+            <footer className='trial-footer'>
+                <Typography variant=''>
+                    Have questions?
+                    <Link to="/contact">
+                        Contact us
+                    </Link>
+                </Typography>
+            </footer>
         </div>
     );
 };
