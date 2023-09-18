@@ -5,6 +5,7 @@ import * as yup from 'yup';
 import Input from '../Input';
 import Typography from '../Typography';
 import Button from '../Button';
+import Label from '../Label';
 import { Link } from 'react-router-dom';
 import "./start-trial.scss";
 
@@ -39,7 +40,15 @@ const StartYourTrial: React.FC = () => {
                     Get started
                 </Typography>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <Controller 
+                    <div className='form-group'>
+                        <Label 
+                            htmlFor='name'
+                            variant=''
+                        >
+                            Name:
+                        </Label>
+
+                        <Controller 
                         name='name'
                         control={control}
                         render={({ field }) => (
@@ -53,13 +62,22 @@ const StartYourTrial: React.FC = () => {
                             />
                         )}
                     />
+                    </div>
                     {errors.name && (
                         <Typography variant='error-message'>
                             {errors.name.message}
                         </Typography>
                     )}
 
-                    <Controller 
+                    <div className='form-group'>
+                        <Label 
+                            variant=''
+                            htmlFor='email'
+                        >
+                            Email:
+                        </Label>
+
+                        <Controller 
                         name='email'
                         control={control}
                         render={({ field }) => (
@@ -73,13 +91,22 @@ const StartYourTrial: React.FC = () => {
                             />
                         )}
                     />
+                    </div>
                     {errors.email && (
                         <Typography variant='error-message'>
                             {errors.email.message}
                         </Typography>
                     )}
+                    
+                    <div className='form-group'>
+                        <Label
+                            variant=''
+                            htmlFor='password'
+                        >
+                            Password:
+                        </Label>
 
-                    <Controller 
+                        <Controller 
                         name='password'
                         control={control}
                         render={({ field }) => (
@@ -93,6 +120,7 @@ const StartYourTrial: React.FC = () => {
                             />
                         )}
                     />
+                    </div>
                     {errors.password && (
                         <Typography variant='error-message'>
                             {errors.password.message}
@@ -126,7 +154,7 @@ const StartYourTrial: React.FC = () => {
             </section>
 
             <footer className='trial-footer'>
-                <Typography variant=''>
+                <Typography variant='trial-subtitle'>
                     Have questions?
                     <Link to="/contact">
                         Contact us

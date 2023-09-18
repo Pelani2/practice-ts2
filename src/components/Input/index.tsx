@@ -3,6 +3,7 @@ import "./input-styles.scss";
 
 const variantClassMap: Record<string, string> = {
     "LS-input": "LS-input",
+    "trial-input": "trial-input",
 };
 
 interface InputProps {
