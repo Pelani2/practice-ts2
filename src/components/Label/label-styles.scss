@@ -26,5 +26,12 @@
         left: 5px;
         top: 10px;
         transition: all 0.3s ease-in-out;
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            top: -20px;
+            font-size: 14px;
+            color: #ff4b2b;
+        }
     }
 }

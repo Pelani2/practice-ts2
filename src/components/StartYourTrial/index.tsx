@@ -129,7 +129,7 @@ const StartYourTrial: React.FC = () => {
 
                     <Button
                         type='submit'
-                        variant='LS-button'
+                        variant='trial-button'
                     >
                         Submit
                     </Button>

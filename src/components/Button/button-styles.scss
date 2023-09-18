@@ -57,4 +57,21 @@
             background-color: darken(#ff6600, 20%);
         }
     }
+
+    &.trial-button {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
