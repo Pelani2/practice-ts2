@@ -1,9 +1,10 @@
 import React from 'react';
-import { useForm, Controller, SubmitHandler } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Input from '../Input';
 import Typography from '../Typography';
+import Button from '../Button';
 import "./start-trial.scss";
 
 const schema = yup.object().shape({
@@ -56,6 +57,53 @@ const StartYourTrial: React.FC = () => {
                             {errors.name.message}
                         </Typography>
                     )}
+
+                    <Controller 
+                        name='email'
+                        control={control}
+                        render={({ field }) => (
+                            <Input 
+                                type='text'
+                                name='email'
+                                placeholder='Email'
+                                field={field}
+                                variant=''
+                                value={field.value}
+                            />
+                        )}
+                    />
+                    {errors.email && (
+                        <Typography variant='error-message'>
+                            {errors.email.message}
+                        </Typography>
+                    )}
+
+                    <Controller 
+                        name='password'
+                        control={control}
+                        render={({ field }) => (
+                            <Input 
+                                type='text'
+                                name='password'
+                                placeholder='Password'
+                                field={field}
+                                variant=''
+                                value={field.value}
+                            />
+                        )}
+                    />
+                    {errors.password && (
+                        <Typography variant='error-message'>
+                            {errors.password.message}
+                        </Typography>
+                    )}
+
+                    <Button
+                        type='submit'
+                        variant='LS-button'
+                    >
+                        Submit
+                    </Button>
                 </form>
             </div>
         </div>
