@@ -21,21 +21,5 @@
         left: 50%;
         transform: translate(-65%, -50%);
         text-align: center;
-
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff6600;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-    
-            &:hover {
-                background-color: darken(#ff6600, 20%);
-            }
-        }
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "../Typography";
-import { Link } from "react-router-dom";
+import Button from "../Button";
 import "./hero-banner-styles.scss";
 
 interface HeroBannerProps {
@@ -15,8 +15,6 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
     title,
     subtitle, 
     backgroundImageUrl,
-    ctaText,
-    ctaLink,
 }) => {
     const backgroundStyle = {
         backgroundImage: `url(${backgroundImageUrl})`,
@@ -31,9 +29,13 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
                 <Typography variant="hero-subtitle">
                     {subtitle}
                 </Typography>
-                <Link to={ctaLink} className="cta-button">
-                    {ctaText}
-                </Link>
+                <Button
+                    type="button"
+                    variant="cta-button"
+                    to="/startyourtrial"
+                >
+                    Get Started
+                </Button>
             </div>
         </div>
     );
